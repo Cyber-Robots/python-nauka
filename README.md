@@ -1,46 +1,10 @@
-# Kalkulator CLI
+# python-nauka
 
-Prosty kalkulator w terminalu napisany w Pythonie. Projekt do nauki Gita, testów i GitHub Actions.
+Małe projekty w Pythonie do nauki Gita, testów i GitHub Actions.
 
-## Funkcje
-
-- Dodawanie, odejmowanie, mnożenie i dzielenie
-- Obsługa błędów (dzielenie przez zero, zły format, litery zamiast liczb)
-- Przecinek lub kropka jako separator dziesiętny
-- Historia obliczeń w trakcie sesji
-
-## Uruchomienie
-
-```
-git clone https://github.com/Cyber-Robots/python-nauka.git
-cd python-nauka
-python3 kalkulator.py
-```
-
-Przykładowa sesja:
-
-```
-> 2 + 3
-5
-> 9 / 2
-4.5
-> 5 / 0
-Błąd: Nie można dzielić przez zero.
-> historia
-2 + 3 = 5
-9 / 2 = 4.5
-> q
-```
+## Projekty
+- [Kalkulator CLI](src/kalkulator/README.md): parser wyrażeń, potęgi, pierwiastek, historia w pliku
+- [To-do CLI](src/todo/README.md): lista zadań zapisywana w JSON
 
 ## Testy
-
-```
-pip install pytest
 python -m pytest
-```
-
-## Pomysły na rozwój
-
-- [ ] Potęgowanie i pierwiastek
-- [ ] Wyrażenia z wieloma działaniami (`2 + 3 * 4`)
-- [ ] Zapis historii do pliku
